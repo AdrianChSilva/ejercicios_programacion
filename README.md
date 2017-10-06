@@ -23,7 +23,7 @@ java HolaMundo
 
 ## gato aleatorio
 
-<img src="imagenes/índice.jpeg" width="240px">
+<img src="Imagenes/indice.jpeg" width="240px">
 
 [fuente de la imagen](https://www.anipedia.net/imagenes/videos-gatos.jpg)
 
