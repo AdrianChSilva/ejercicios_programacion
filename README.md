@@ -21,11 +21,11 @@ java HolaMundo
 * Comandos de Linux
 * Git y Github
 
-## gato aleatorio
+## Bibliografía
 
-<img src="Imagenes/indice.jpeg" width="240px">
+<img src="Imagenes/hero.jpeg" width="240px">
 
-[fuente de la imagen](https://www.anipedia.net/imagenes/videos-gatos.jpg)
+[Aprende Java con ejercicios](https://leanpub.com/aprendejava/)
 
 
 
