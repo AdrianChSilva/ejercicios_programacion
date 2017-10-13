@@ -23,6 +23,6 @@ public class Ejercicio_07 {
 
 
     System.out.print( "El total de su factura (con IVA) es: " + (((primero + segundo + tercero + cuarto) * 1.21) + "\n"));
- 
+    System.out.print( "El total de su factura (sin IVA) es: " + ((primero + segundo + tercero + cuarto) + "\n"));
   } 
 }
