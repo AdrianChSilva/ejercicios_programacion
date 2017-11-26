@@ -1,26 +1,32 @@
-/** Ejercicio 7
-Escribe un programa que muestre tres apuestas de la quiniela en tres columnas
-para los 14 partidos y el pleno al quince (15 filas).
-@author Adrian
+/**Ejercicio 8
+Modifica el programa anterior para que la probabilidad de que salga un 1 sea
+de 1/2, la probabilidad de que salga x sea de 1/3 y la probabilidad de que salga
+2 sea de 1/6. Pista: 1/2 = 3/6 y 1/3 = 2/6.
+@author AdrianChSilva
 */
+public class Ejercicio08_T06Probabilidad {
 
-public class Ejercicio07_T06 {
+  
+  
   public static void main(String[] args) {
     for (int fila = 1; fila <= 15; fila++) {
       System.out.printf("%4d. |", fila);
       
       
       for (int columna = 0; columna < 3; columna++ ) {
-        int quiniela = (int)((Math.random()*3) + 1);
+        int quiniela = (int)((Math.random()*6) + 1);
         
         switch (quiniela) {
           case 1:
+          case 2:
+          case 3:
             System.out.print("1  |");
             break;
-          case 2: 
+          case 4: 
+          case 5:
             System.out.print(" 2 |");
             break;
-          case 3: 
+          case 6: 
             System.out.print("  x|");
             break;
         }
@@ -29,3 +35,5 @@ public class Ejercicio07_T06 {
     }
   }
 }
+
+
