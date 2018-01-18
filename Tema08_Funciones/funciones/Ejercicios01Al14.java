@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Ejercicios01Al14;
+package funciones;
 
 /**
  *
@@ -11,9 +11,9 @@ package Ejercicios01Al14;
  */
 import java.util.Scanner;
 
-public class ejercicios01Al14 {
+public class Ejercicios01Al14 {
 
-  public static void main(String[] args) {
+//  public static void main(String[] args) {
 //    Scanner s = new Scanner(System.in);
 //    System.out.println("Introduce un número ");
 //    int num = s.nextInt();
@@ -75,7 +75,7 @@ public class ejercicios01Al14 {
 //    //Juntamos dos numeros//////////////////////////////////////////////////////
 //    System.out.println("Si juntamos el " + primero + " y el " + segundo + " nos da " + juntaNumeros(primero,segundo));
 //
-  }
+//  }
 
   public static long voltea(long x) {
     if (x < 0) {
