@@ -21,11 +21,11 @@ public class Ejercicio17_T08BiToDec {
     //proceso para pasar de binario a decimal///////////////////////////////////
     exponente = 0;
     decimal = 0;
-    while (binario != 0) {
+    while (binario != 0) { //Aquí decimos que coja cada 1 del numero binario////
       digito = binario % 10;
       decimal = decimal + digito * (int) Math.pow(2, exponente);
       exponente++;
-      binario = binario / 10;
+      binario = binario / 10; //Aquí vamos acortando el número para que 'digito' pueda seguir cogiendo el último numero
     }
     System.out.println("Decimal: " + decimal);
   }
