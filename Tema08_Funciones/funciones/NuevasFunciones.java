@@ -10,8 +10,8 @@ package funciones;
  * @author Adrian
  */
 public class NuevasFunciones {
-  
-    public static long voltea(long x) {
+
+  public static long voltea(long x) {
     if (x < 0) {
       return -voltea(-x);
     }
@@ -95,7 +95,7 @@ public class NuevasFunciones {
     int i;
 
     for (i = 0; (i < digitos(x)) && (digitoN(x, i) != d); i++) {
-    };
+    }
 
     if (i == digitos(x)) {
       return -1;
@@ -134,7 +134,7 @@ public class NuevasFunciones {
     return (long) (x * potencia(10, digitos(y))) + y;
   }
 
-  public static long biToDec(long x){
+  public static long biToDec(long x) {
     long digito, decimal;
     int exponente;
     //proceso para pasar de binario a decimal///////////////////////////////////
@@ -145,10 +145,75 @@ public class NuevasFunciones {
       decimal = decimal + digito * (int) Math.pow(2, exponente);
       exponente++;
       x = x / 10; //Aquí vamos acortando el número para que 'digito' pueda seguir cogiendo el último numero
-      
+
     }
     return decimal;
   }
+
+  public static long decToBi(long x) {
+    long digito, binario;
+    int exponente;
+    exponente = 0;
+    binario = 0;
+    while (x != 0) {
+      digito = x % 2;
+      binario = binario + digito * (int) Math.pow(10, exponente);
+      exponente++;
+      x = x / 2;
+
+    }
+    return binario;
+  }
+
+  public static String decToHex(int x) {
+
+    int digito;
+    String letra = "";
+    char hex[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
+
+    while (x > 0) {
+      digito = x % 16;
+      letra = hex[digito] + letra;
+      x = x / 16;
+    }
+    return letra;
+  }
+
+  public static long hexToBi(String hexadecimal) {
+    String digitosHexa = "0123456789ABCDEF";
+    long binario = 0;
+
+    for (int i = 0; i < hexadecimal.length(); i++) {
+      binario = binario * 10000 + decToBi(digitosHexa.indexOf(hexadecimal.charAt(i)));
+    }
+
+    return binario;
+  }
+
+  public static long decToOct(long x) {
+    long digito, octal;
+    int exponente;
+    exponente = 0;
+    octal = 0;
+    while (x != 0) {
+      digito = x % 8;
+      octal = octal + digito * (int) Math.pow(10, exponente);
+      exponente++;
+      x = x / 8;
+
+    }
+    return octal;
+  }
+
+  public static long octToDec(long numero) {
+    long valor = 0, digito, total = 0;
+    while (numero > 0) {
+      digito = numero % 10;	//cogemos el digito
+      numero /= 10;		//kitamos el digito del numero
+      total += digito * (int) Math.pow(8, valor);
+      valor++;
+    }
+    return total;
+  }
+
 }
-
-
