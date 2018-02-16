@@ -15,7 +15,7 @@ public class Ejercicio17_T08BiToDec {
     int exponente;
     boolean esBinario;
 
-    System.out.print("Introduce un numero binario y lo convertiré en decimal");
+    System.out.print("Introduce un numero binario y lo convertiré en decimal: ");
     binario = s.nextLong();
     
     //proceso para pasar de binario a decimal///////////////////////////////////
