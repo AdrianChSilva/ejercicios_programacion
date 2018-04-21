@@ -40,9 +40,6 @@ public class Ej05_T07Bid {
       }
       System.out.println();
     }
-
-    System.out.println("Este es el máximo " + max + " y está en la posicion " + aux);
-    System.out.println("Este es el minimo " + min + " y está en la posicion " + aux2);
     System.out
         .println("Este es el máximo " + max + " y está en la posicion [" + aux + "][" + aux3 + "]");
     System.out.println(
