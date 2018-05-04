@@ -1,12 +1,13 @@
 
 public class Incidencia {
-  private int codigo = (int) (Math.random() * 4) + 1;
+  private int codigo = (int) (Math.random() * 5) + 1;
   private int puesto;
   private boolean resolucion = false;
   private String pendiente = "pendiente";
   private String resuelto = "resuelto";
   private String incidente;
   private String metodo;
+  private static int contadorPendientes;
 
   public int getPuesto() {
     return puesto;
@@ -15,7 +16,9 @@ public class Incidencia {
   public Incidencia(int puesto, String incidente) {
     this.puesto = puesto;
     this.incidente = incidente;
-    // this.pendiente = pendiente;
+    if (this.resolucion == false) {
+      contadorPendientes++;
+    }
   }
 
   public String getIncidente() {
@@ -46,35 +49,31 @@ public class Incidencia {
     this.resuelto = resuelto;
 
   }
-  
+
   public String resuelve(String x) {
     this.resolucion = true;
+    if (this.resolucion == true) {
+      contadorPendientes--;
+    }
     this.metodo = x;
     return this.metodo;
   }
 
+  public static int getPendientes() {
+
+    return contadorPendientes;
+  }
 
   public String toString() {
     String resultado = "";
-    if(this.resolucion == false) {
-      resultado = "Incidencia " + codigo + " - Puesto: " + puesto + " - " + incidente + " - " + pendiente;
+    if (this.resolucion == false) {
+      resultado =
+          "Incidencia " + codigo + " - Puesto: " + puesto + " - " + incidente + " - " + pendiente;
     } else {
-      resultado = "Incidencia " + codigo + " - Puesto: " + puesto + " - " + incidente + " - " + metodo +" - " +resuelto;
+      resultado = "Incidencia " + codigo + " - Puesto: " + puesto + " - " + incidente + " - "
+          + metodo + " - " + resuelto;
     }
     return resultado;
 
   }
-
-//  @Override
-//  public String toString() {
-//
-//    return incidente if (resolucion == false) {
-//      String resultado = "Incidencia [codigo=" + codigo + ", puesto=" + puesto + ", pendiente="
-//          + pendiente + ", resuelto=" + resuelto + ", incidente=" + incidente + "]";
-//    }
-//   
-//
-//  }
-
-
 }
