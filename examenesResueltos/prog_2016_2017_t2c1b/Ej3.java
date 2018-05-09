@@ -16,9 +16,10 @@ public class Ej3 {
     Tique t1 = new Tique(10, 5);
     Tique t2 = new Tique(14, 30);
     Tique t3 = new Tique(15, 00);
-    System.out.println(t1.paga(11, 00));
-    System.out.println(t3.paga(17, 45));
-    System.out.println(t2.paga(18, 20));
+    t1.paga(11, 00);
+    t3.paga(17, 45);
+    t2.paga(18, 20);
+    System.out.println("La recaudación es de "+Tique.getRecaudacion() + " Euros");
   }
 
 }

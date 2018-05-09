@@ -5,7 +5,10 @@ public class Tique {
   private int horas;
   private int minutos;
   private double precio = 0.02;
+  private static float recaudacion;
 
+  
+  
   public static int getCodigo() {
     return codigo;
   }
@@ -54,15 +57,25 @@ public class Tique {
   public void setPrecio(double precio) {
     this.precio = precio;
   }
-  
-  public String paga(int horasP, int minutosP) {
-    String resultado;
-    float x = (float) (((horasP * 60 + minutosP) - (this.getHoras() * 60 + this.getMinutos())) * this.getPrecio());
-    resultado = "tique nº" + this.numero+ ". Debe pagar "  + x + "€. Gracias";
-    return resultado;
+
+
+
+  public static float getRecaudacion() {
+    return recaudacion;
+  }
+
+  public static void setRecaudacion(float recaudacion) {
+    Tique.recaudacion = recaudacion;
   }
 
 
-
+  public  void paga(int horasP, int minutosP) {
+    String resultado;
+    float x = (float) (((horasP * 60 + minutosP) - (this.getHoras() * 60 + this.getMinutos())) * this.getPrecio());
+    resultado = "tique nº" + this.numero+ ". Debe pagar "  + x + "€. Gracias";
+    Tique.setRecaudacion(Tique.getRecaudacion() +x);
+    System.out.println(resultado);
+    
+  }
 
 }
