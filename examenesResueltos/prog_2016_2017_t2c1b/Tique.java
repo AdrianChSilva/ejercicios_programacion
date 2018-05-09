@@ -1,12 +1,24 @@
 
 public class Tique {
-  private int numero = 0;
+  private static int codigo = 0;
+  private int numero;
   private int horas;
   private int minutos;
   private double precio = 0.02;
 
+  public static int getCodigo() {
+    return codigo;
+  }
+
+  public static void setCodigo(int codigo) {
+    Tique.codigo = codigo;
+  }
+  static int obtenerNumero() {
+    Tique.setCodigo(Tique.getCodigo() + 1);
+    return Tique.getCodigo();
+  }
   public Tique(int horas, int minutos) {
-    this.numero++;
+    this.numero = Tique.obtenerNumero();
     this.horas = horas;
     this.minutos = minutos;
   }
@@ -42,14 +54,14 @@ public class Tique {
   public void setPrecio(double precio) {
     this.precio = precio;
   }
-
-  @Override
-  public String toString() {
-
-    
-    return "Tique [numero=" + this.numero + ", horas=" + horas + ", minutos=" + minutos + ", precio="
-        + precio + "]";
+  
+  public String paga(int horasP, int minutosP) {
+    String resultado;
+    float x = (float) (((horasP * 60 + minutosP) - (this.getHoras() * 60 + this.getMinutos())) * this.getPrecio());
+    resultado = "tique nº" + this.numero+ ". Debe pagar "  + x + "€. Gracias";
+    return resultado;
   }
+
 
 
 
