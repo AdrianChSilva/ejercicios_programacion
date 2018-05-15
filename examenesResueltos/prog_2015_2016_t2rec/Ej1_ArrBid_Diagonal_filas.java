@@ -1,14 +1,15 @@
 /**
- * Realiza un programa que genere y muestre por pantalla un array bidimensional de números enteros
- * entre 100 y 200. El número de filas debe ser igual al número de columnas (un número aleatorio
- * entre 4 y 10). A continuación, se deben extraer del array los siguientes datos: a) La diagonal
+ * Realiza un programa que genere y muestre por pantalla un array bidimensional de nÃºmeros enteros
+ * entre 100 y 200. El nÃºmero de filas debe ser igual al nÃºmero de columnas (un nÃºmero aleatorio
+ * entre 4 y 10). A continuaciÃ³n, se deben extraer del array los siguientes datos: a) La diagonal
  * que va de la esquina superior izquierda a la esquina inferior derecha. b) La diagonal que va de
- * la esquina superior derecha a la esquina inferior izquierda. c) La primera fila. d) La última
- * fila. e) La primera columna. f) La última columna.
+ * la esquina superior derecha a la esquina inferior izquierda. c) La primera fila. d) La Ãºltima
+ * fila. e) La primera columna. f) La Ãºltima columna.
  * 
  * @author adrian.chamorrosilva
  *
  */
+//EL TAMAÃ‘O DEL ARRAY NO ESTÃ GENERADO ALEATORIAMENTE
 public class Ej1_ArrBid_Diagonal_filas {
 
   public static void main(String[] args) {
