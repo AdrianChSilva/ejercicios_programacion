@@ -1,17 +1,18 @@
 /**
- * Implementa una función que sea capaz de “desenrollar” un array bidimensional recorriéndola en
-espiral en el sentido de las agujas del reloj. La cabecera de la función es la siguiente:
+ * Implementa una funciÃ³n que sea capaz de â€œdesenrollarâ€ un array bidimensional recorriÃ©ndola en
+espiral en el sentido de las agujas del reloj. La cabecera de la funciÃ³n es la siguiente:
 public static int[] desenrolla(int[][] n)
-Por ejemplo, si el array bidimensional “a” es el que se muestra a continuación
+Por ejemplo, si el array bidimensional â€œaâ€ es el que se muestra a continuaciÃ³n
 45 92 14 20 25 78
 35 72 24 45 42 60
 32 42 64 23 41 39
 98 45 94 11 18 48
-El array unidimensional generado por desenrolla(a) sería el siguiente
+El array unidimensional generado por desenrolla(a) serÃ­a el siguiente
 45 92 14 20 25 78 60 39 48 18 11 94 45 98 32 35 72 24 45 42 41 23 64 42
  * @author adrian.chamorrosilva
  *
  */
+////////NO ESTÃ BIEN. NO LO HACE EN ESPIRAL///////
 public class Ej04 {
 
   public static void main(String[] args) {
