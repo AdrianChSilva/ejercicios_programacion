@@ -39,7 +39,7 @@ public  class Terminal {
 
     x.conversacion += y;
     this.conversacion += y;
-    this.converTotal = y;
+    this.converTotal += y;
 
    // return this;
   }
