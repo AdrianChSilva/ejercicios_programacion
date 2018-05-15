@@ -48,6 +48,7 @@ public class Ej04 {
         cont++;
       }
     }
+    //INTRODUCE EN SENTIDO A LAS AGUJAS DEL RELOJ
     int[] resultado = new int[cont];
     int contador = 0;
     for (int i = 0; i < n.length; i++) {
@@ -63,4 +64,14 @@ public class Ej04 {
     return resultado;
 
   }
+  //INTRODUCE EN SENTIDO CONTRARIO A LAS AGUJAS DEL RELOJ/
+//  for (int i = 0; i < n[0].length; i++) {
+//    for (int j = 0; j < n.length; j++) {
+//      for (int f = contador; f < resultado.length; f++) {
+//        resultado[f] = n[j][i];
+//
+//      }
+//      contador++;
+//    }
+//  }
 }
