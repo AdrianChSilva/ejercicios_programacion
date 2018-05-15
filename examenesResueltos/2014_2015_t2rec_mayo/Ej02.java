@@ -1,17 +1,18 @@
 /**
-  *  * Se dice que una matriz (un array bidimensional) tiene el borde homogÈneo cuando todos los dÌgitos
-que se encuentran en el borde son iguales. Por ejemplo, la siguiente matriz tiene el borde homogÈneo:
+  *  * Se dice que una matriz (un array bidimensional) tiene el borde homog√©neo cuando todos los d√≠gitos
+que se encuentran en el borde son iguales. Por ejemplo, la siguiente matriz tiene el borde homog√©neo:
 2 2 2 2 2
 2 4 1 5 2
 2 0 9 8 2
 2 2 2 2 2
-Realiza una funciÛn que diga si una matriz dada tiene o no el borde homogÈneo y pruÈbala en un
+Realiza una funci√≥n que diga si una matriz dada tiene o no el borde homog√©neo y pru√©bala en un
 programa. Los valores de los arrays de prueba deben estar asignados en el programa, no se piden por
-teclado. La cabecera de la funciÛn es la siguiente:
+teclado. La cabecera de la funci√≥n es la siguiente:
 public static boolean tieneBordeHomogeneo(int[ ][ ] a)
  * @author adrianchs
  *
  */
+//NO EST√Å DEL TODO BIEN/////
 public class Ej02 {
 
 	public static void main(String[] args) {
