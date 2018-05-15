@@ -5,6 +5,7 @@ import java.util.Arrays;
  * @author Adrichs
  *
  */
+////NO ESTÁ DEL TODO BIEN/////////
 public class Ej03_PalabrasComunes {
 
 	public static void main(String[] args) {
@@ -31,4 +32,4 @@ public class Ej03_PalabrasComunes {
 	}
 
 }
-//if (a[i] == b[j]) { <--- Tambi�n sirve
+//if (a[i] == b[j]) { <--- También sirve
